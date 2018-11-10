@@ -2,6 +2,7 @@ package LN;
 
 
 
+
 import java.io.Serializable;
 
 public class clsUsuario implements Serializable {
@@ -71,6 +72,7 @@ public class clsUsuario implements Serializable {
 
 
 	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -83,32 +85,34 @@ public class clsUsuario implements Serializable {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj) {
+		if (this == obj)
 			return true;
-		}
-		if (obj == null) {
+		if (obj == null)
 			return false;
-		}
-		if (getClass() != obj.getClass()) {
+		if (getClass() != obj.getClass())
 			return false;
-		}
 		clsUsuario other = (clsUsuario) obj;
 		if (mail == null) {
-			if (other.mail != null) {
+			if (other.mail != null)
 				return false;
-			}
-		} else if (!mail.equals(other.mail)) {
+		} else if (!mail.equals(other.mail))
 			return false;
-		}
 		if (nomUsuario == null) {
-			if (other.nomUsuario != null) {
+			if (other.nomUsuario != null)
 				return false;
-			}
-		} else if (!nomUsuario.equals(other.nomUsuario)) {
+		} else if (!nomUsuario.equals(other.nomUsuario))
 			return false;
-		}
 		return true;
 	}
+
+
+
+
+
+
+
+
+
 
 
 
