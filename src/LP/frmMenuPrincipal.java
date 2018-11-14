@@ -135,7 +135,7 @@ public class frmMenuPrincipal extends JFrame implements ActionListener, Internal
 		
 		JLabel label = new JLabel("");
 		label.setBounds(155, 152, 531, 168);
-		ImageIcon logo= new ImageIcon("src/LP/buscaminas.png");
+		ImageIcon logo= new ImageIcon("src/imagenes/buscaminas.png");
 		desktop.setLayout(null);
 		label.setIcon(logo);
 		getContentPane().add(label);
