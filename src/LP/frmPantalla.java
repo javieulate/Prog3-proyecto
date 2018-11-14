@@ -123,6 +123,8 @@ public class frmPantalla extends JFrame implements ActionListener
 			try 
 			{
 				clsGestor.AltaUsuario(nomtxt.getText(), apetxt.getText(), corretxt.getText(), nomusutxt.getText(), contrausutxt.getText());
+		        JOptionPane.showMessageDialog(null, "Compruebe que se ha registrado correctamente en su dirección de correo electrónico. ¡Gracias!" );
+
 				this.setVisible(false);
 //					frmMenuPrincipal frame = new frmMenuPrincipal();
 //					frame.setVisible(true);
@@ -156,11 +158,11 @@ public class frmPantalla extends JFrame implements ActionListener
 		contentPane.setLayout(null);
 		
 		JLabel Buscaminas = new JLabel("");
-		ImageIcon logo= new ImageIcon("src/LP/buscaminas.png");
+		ImageIcon logo= new ImageIcon("src/imagenes/buscaminas.png");
 		Buscaminas.setIcon(logo);
 		Buscaminas.setBounds(140, 53, 537, 203);
 		contentPane.add(Buscaminas);
-		ImageIcon im= new ImageIcon("src/LP/bombita.jpg");
+		ImageIcon im= new ImageIcon("src/imagenes/bombita.jpg");
 	    this.setIconImage(im.getImage());
 		
 		btnIniciarSesion = new JButton("Iniciar Sesión");
@@ -190,7 +192,7 @@ public class frmPantalla extends JFrame implements ActionListener
 		contentPane.removeAll();
 		
 		JLabel Buscaminas = new JLabel("");
-		ImageIcon logo= new ImageIcon("src/LP/buscaminas.png");
+		ImageIcon logo= new ImageIcon("src/imagenes/buscaminas.png");
 		Image image = logo.getImage(); 
 		Image newimg = image.getScaledInstance(180, 110,  java.awt.Image.SCALE_SMOOTH);
 		logo = new ImageIcon(newimg); 
@@ -252,7 +254,7 @@ public class frmPantalla extends JFrame implements ActionListener
 		contentPane.removeAll();
 		
 		JLabel Buscaminas = new JLabel("");
-		ImageIcon logo= new ImageIcon("src/LP/buscaminas.png");
+		ImageIcon logo= new ImageIcon("src/imagenes/buscaminas.png");
 		Image image = logo.getImage(); 
 		Image newimg = image.getScaledInstance(180, 110,  java.awt.Image.SCALE_SMOOTH);
 		logo = new ImageIcon(newimg); 
