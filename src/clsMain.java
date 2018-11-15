@@ -10,7 +10,7 @@ import LP.frmPantalla;
 public class clsMain {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		frmPantalla frame = new frmPantalla();
 		frame.setVisible(true);
 		ArrayList<clsUsuario> listaUsu = new ArrayList<clsUsuario>();
@@ -47,8 +47,5 @@ public class clsMain {
 //			// TODO Auto-generated catch block
 //			e1.printStackTrace();
 //		}
-		
-		
 	}
-
 }

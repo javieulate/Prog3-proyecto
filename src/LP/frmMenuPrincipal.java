@@ -122,15 +122,16 @@ public class frmMenuPrincipal extends JFrame implements ActionListener, Internal
 		txtrMenuUsuario.setBounds(52, 60, 309, 48);
 		txtrMenuUsuario.setBackground(SystemColor.text);
 		txtrMenuUsuario.setFont(new Font("Microsoft Tai Le", Font.BOLD, 17));
-		try 
-		{
-			txtrMenuUsuario.setText("Bienvenid@, "+clsGestor.NomUsuario());
-		} 
-		catch (IOException e1) 
-		{
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
+		txtrMenuUsuario.setText("Bienvenid@");
+		//		try 
+//		{
+//			txtrMenuUsuario.setText("Bienvenid@, "+clsGestor.NomUsuario());
+//		} 
+//		catch (IOException e1) 
+//		{
+//			// TODO Auto-generated catch block
+//			e1.printStackTrace();
+//		}
 		desktop.add(txtrMenuUsuario);
 		
 		JLabel label = new JLabel("");
